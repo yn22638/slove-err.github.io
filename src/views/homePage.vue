@@ -197,7 +197,9 @@
     margin-bottom: 1rem;
   }
   .btn {
-    background-color: rgba(219, 219, 219, 0.8);
+    // background-color: rgba(219, 219, 219, 0.8);
+        background: #11a8cd;
+    color: #fff;
     padding: 0.4rem;
     margin-top: 0.2rem;
   }
