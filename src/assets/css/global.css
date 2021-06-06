@@ -1,0 +1,31 @@
+/* 全局样式表 */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #fffafa !important;
+  --boxShadow: 0 6px 30px -10px rgb(0 0 0 / 10%);
+  --headShadow: 0 0 10px rgb(0 0 0 / 8%);
+  --borderAll: 1px solid rgba(219, 219, 219, 0.3);
+  --borderRadius: 6px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 940px;
+}
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 600px !important;
+    min-width: 0px;
+  }
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
