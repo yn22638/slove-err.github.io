@@ -221,26 +221,9 @@
     top: 55px;
     left: 0px;
     padding: 0px !important;
-    // .serach {
-    //   position: fixed;
-    //   top: 10px;
-    //   // right: -4.5rem;
-    //   right: -18%;
-    //   z-index: 111111111 !important;
-    //   background-color: rgba(255, 255, 255, 0) !important;
-    //   box-shadow: none !important;
-    //   border-radius: none !important;
-    //   border: none !important;
-    //   width: 60% !important;
-    //   font-size: 0.3rem;
-    //   height: 40px;
-    //   padding: 8px 0px !important;
-    //   .serach-value {
-    //     background-color: rgba(255, 255, 255, 0) !important;
-    //     width: 50%;
-    //     overflow: hidden;
-    //   }
-    // }
+    .serach {
+      display: none;
+    }
     .user-card {
       min-height: 0px !important;
       margin-bottom: 0px !important;
