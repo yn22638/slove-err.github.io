@@ -1,10 +1,18 @@
 <template>
   <div class="container">
     <nav class="nav-bar">
-      <div class="left">
+      <div class="logo-left">
         <h2 class="navbar-brand">
           <a href="/">Evan's Blog</a>
         </h2>
+      </div>
+      <div class="serach-right">
+        <span class="iconfont icon-sousou"></span>
+        <input
+          type="text"
+          class="serach-value"
+          placeholder="Seach every.."
+        >
       </div>
     </nav>
     <div class="content">
@@ -71,6 +79,9 @@ export default {
   box-sizing: border-box;
   overflow: hidden;
   .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.5%;
     min-width: 940px;
     height: 50px;
     position: fixed;
@@ -81,9 +92,8 @@ export default {
     line-height: 50px;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
-  overflow: hidden;
-    .left {
-      padding-left: 2%;
+    overflow: hidden;
+    .logo-left {
       .navbar-brand {
         color: rgba(0, 0, 0, 0.9);
         font-size: 1.25rem;
@@ -91,6 +101,9 @@ export default {
         white-space: nowrap;
         text-overflow: ellipsis;
       }
+    }
+    .serach-right {
+      display: none;
     }
   }
   .content {
@@ -115,7 +128,7 @@ export default {
       margin-top: 15px;
       text-align: center;
       cursor: pointer;
-      transition: all 0.5s;
+      // transition: all 0.5s;
       font-size: 22px;
       color: #ffffff;
       background: #11a8cd;
@@ -134,7 +147,28 @@ export default {
     overflow: hidden !important;
     min-width: 0px !important;
     // background-color: red !important;
+    .serach-right {
+      display: block !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+      box-shadow: none !important;
+      border-radius: none !important;
+      border: none !important;
+      // width: 60% !important;
+      font-size: 0.3rem;
+      height: 100%;
+      width: 155px !important;
+      span {
+        margin-right: 0.5rem;
+      }
+      .serach-value {
+        background-color: rgba(255, 255, 255, 0) !important;
+        width: 50%;
+        border: 0;
+        overflow: hidden;
+      }
+    }
   }
+
   .content {
     min-width: 0px !important;
     max-width: 600px !important;

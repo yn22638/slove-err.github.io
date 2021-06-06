@@ -11,11 +11,6 @@ const routes = [{
     },
     {
         path: '/',
-        redirect: '/blog'
-    },
-    {
-        path: '/blog/',
-        name: 'blog',
         redirect: {
             name: 'homepage'
         },

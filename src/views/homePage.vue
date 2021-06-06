@@ -221,23 +221,26 @@
     top: 55px;
     left: 0px;
     padding: 0px !important;
-    .serach {
-      position: fixed;
-      top: 10px;
-      right: -3.5rem;
-      z-index: 111111111 !important;
-      background-color: rgba(255, 255, 255, 0) !important;
-      box-shadow: none !important;
-      border-radius: none !important;
-      border: none !important;
-      width: 60% !important;
-      font-size: 0.3rem;
-      height: 40px;
-      padding: 8px 0px !important;
-      input {
-        background-color: rgba(255, 255, 255, 0) !important;
-      }
-    }
+    // .serach {
+    //   position: fixed;
+    //   top: 10px;
+    //   // right: -4.5rem;
+    //   right: -18%;
+    //   z-index: 111111111 !important;
+    //   background-color: rgba(255, 255, 255, 0) !important;
+    //   box-shadow: none !important;
+    //   border-radius: none !important;
+    //   border: none !important;
+    //   width: 60% !important;
+    //   font-size: 0.3rem;
+    //   height: 40px;
+    //   padding: 8px 0px !important;
+    //   .serach-value {
+    //     background-color: rgba(255, 255, 255, 0) !important;
+    //     width: 50%;
+    //     overflow: hidden;
+    //   }
+    // }
     .user-card {
       min-height: 0px !important;
       margin-bottom: 0px !important;
@@ -287,13 +290,17 @@
 <template>
   <div class="columns">
     <div class="columns-left">
-      <div class="card-content"
+      <div
+        class="card-content"
         v-for="item in errData"
-        :key="item.id">
+        :key="item.id"
+      >
         <div class="top-Img">
           <!-- https://picsum.photos/369/140 -->
-          <img :src="item.imgUrl"
-            alt="">
+          <img
+            :src="item.imgUrl"
+            alt=""
+          >
         </div>
         <div class="bottom-content">
           <div class="labelText">
@@ -303,14 +310,18 @@
           </div>
           <h2>{{item.mainName}}</h2>
           <p class="tiem">2018-02-12</p>
-          <div class="err-find"
+          <div
+            class="err-find"
             v-for="(content,index) in item.content"
-            :key="index">
+            :key="index"
+          >
             <p class="textContent">
               {{index+1}}.{{content.errName}}
             </p>
-            <a :href="content.slovePath"
-              class="btn">Let's go!</a>
+            <a
+              :href="content.slovePath"
+              class="btn"
+            >Let's go!</a>
           </div>
         </div>
       </div>
@@ -318,14 +329,19 @@
     <div class="columns-right">
       <div class="serach">
         <span class="iconfont icon-sousou"></span>
-        <input type="text"
-          placeholder="Seach everything..">
+        <input
+          type="text"
+          class="serach-value"
+          placeholder="Seach every.."
+        >
       </div>
       <div class="user-card">
         <div class="head-container">
           <div class="head-img">
-            <img src="https://haojen.github.io/Claudia-theme-blog/images/avatar.jpg"
-              alt="">
+            <img
+              src="https://haojen.github.io/Claudia-theme-blog/images/avatar.jpg"
+              alt=""
+            >
           </div>
         </div>
         <h3 class="username">Evan Mo</h3>
@@ -341,18 +357,28 @@
           <span>河北省</span>
         </div>
         <div class="ns-container">
-          <a href="https://github.com/yn22638"
+          <a
+            href="https://github.com/yn22638"
             class="iconfont icon-github"
-            style="font-size: 37px"></a>
-          <a href="http://wpa.qq.com/msgrd?v=3&uin=1941263063&site=qq&menu=yes"
-            class="iconfont icon-qq-copy-copy"></a>
-          <a href="https://gitee.com/Yn_22638"
-            class="iconfont icon-gitee-fill-round"></a>
-          <a href=""
+            style="font-size: 37px"
+          ></a>
+          <a
+            href="http://wpa.qq.com/msgrd?v=3&uin=1941263063&site=qq&menu=yes"
+            class="iconfont icon-qq-copy-copy"
+          ></a>
+          <a
+            href="https://gitee.com/Yn_22638"
+            class="iconfont icon-gitee-fill-round"
+          ></a>
+          <a
+            href=""
             class="iconfont icon-twitter"
-            style="font-size: 37px"></a>
-          <a href=""
-            class="iconfont icon-social-_round-facebook"></a>
+            style="font-size: 37px"
+          ></a>
+          <a
+            href=""
+            class="iconfont icon-social-_round-facebook"
+          ></a>
         </div>
       </div>
 
