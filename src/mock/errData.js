@@ -362,7 +362,7 @@ const errList = [
   },
   {
     idd: 11,
-    imgUrl: 'https://picsum.photos/369/150',
+    imgUrl: 'https://picsum.photos/369/151',
     mainName: 'Pc端自适应',
     content: [
       {
