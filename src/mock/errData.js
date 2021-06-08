@@ -275,6 +275,15 @@ const errList = [
       {
         errName: '使用http-proxy-middleware解决跨域',
         slovePath: 'https://blog.csdn.net/springAsahi/article/details/80604534'
+      },
+      {
+        errName:
+          'vue-cli项目启动时出现Cannot find module ‘vue-loader-v16/package.json‘的问题',
+        slovePath: 'https://www.pianshen.com/article/24612041541/'
+      },
+      {
+        errName: "Cannot find module 'vue-loader-v16/package.json'",
+        slovePath: 'https://zhuanlan.zhihu.com/p/227797212'
       }
     ]
   },
@@ -288,6 +297,14 @@ const errList = [
           'cnpm : 无法加载文件 C:UsersXXXAppDataRoaming\npmcnpm.ps1，因为在此系统上禁止运行脚本——解决办法',
         slovePath:
           'https://blog.csdn.net/yyp0304Devin/article/details/105620677'
+      },
+      {
+        errName: 'nvm安装与使用',
+        slovePath: 'https://www.cnblogs.com/gaozejie/p/10689742.html'
+      },
+      {
+        errName: 'node工具之nodemon',
+        slovePath: 'https://www.jianshu.com/p/f60e14db0b4e'
       }
     ]
   },
@@ -317,6 +334,10 @@ const errList = [
         errName: '有关 :first-child的理解',
         slovePath:
           'https://blog.csdn.net/weixin_38134581/article/details/83504080'
+      },
+      {
+        errName: 'Css面试题',
+        slovePath: 'https://blog.csdn.net/u014697639/article/details/80311559'
       }
     ]
   },
@@ -328,6 +349,14 @@ const errList = [
       {
         errName: '解决git默认文件夹大小写问题',
         slovePath: 'https://www.cnblogs.com/lidonglin/p/13072717.html'
+      },
+      {
+        errName: 'git分支管理',
+        slovePath: 'http://www.ruanyifeng.com/blog/2012/07/git.html'
+      },
+      {
+        errName: '【Git】记录git常遇到的问题及解决方法',
+        slovePath: 'https://blog.csdn.net/Crab0314/article/details/80106365'
       }
     ]
   },
