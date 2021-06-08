@@ -8,11 +8,9 @@
       </div>
       <div class="serach-right">
         <span class="iconfont icon-sousou"></span>
-        <input
-          type="text"
+        <input type="text"
           class="serach-value"
-          placeholder="Seach every.."
-        >
+          placeholder="Seach every..">
       </div>
     </nav>
     <div class="content">
@@ -20,11 +18,9 @@
     </div>
     <div class="top-or-pageType">
       <transition name="slide-fade">
-        <div
-          class="iconfont icon-fanhuidingbu button_blur"
+        <div class="iconfont icon-fanhuidingbu button_blur"
           @click="bindTop"
-          v-show="isShow"
-        ></div>
+          v-show="isShow"></div>
       </transition>
     </div>
   </div>
@@ -37,7 +33,7 @@ export default {
   data() {
     return {
       isShow: false,
-      scrollTopH: 0,
+      scrollTopH: 0
     }
   },
   computed: {},
@@ -58,16 +54,21 @@ export default {
     },
     // 控制返回顶部显示隐藏
     scrollTop() {
-      this.scrollTopH = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      this.scrollTopH =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop
       if (this.scrollTopH > 100) {
         this.isShow = true
       } else {
-        this.isShow = false;
+        this.isShow = false
       }
-    },
+    }
   },
-  mounted() { // 监听滚动事件
-    window.addEventListener('scroll', this.scrollTop)  }
+  mounted() {
+    // 监听滚动事件
+    window.addEventListener('scroll', this.scrollTop)
+  }
 }
 </script>
 
@@ -120,9 +121,9 @@ export default {
     z-index: 11;
 
     .button_blur {
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
       border-radius: 50%;
       // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       margin-top: 15px;

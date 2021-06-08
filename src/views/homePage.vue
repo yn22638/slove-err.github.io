@@ -33,6 +33,7 @@
         padding: 1rem !important;
         background-color: #ffffff;
         box-sizing: border-box;
+        overflow: auto;
         .labelText {
           margin-bottom: 13px;
           a {
@@ -45,6 +46,26 @@
             border-radius: 10px;
             background: transparent;
             border: 2px solid darkorange;
+          }
+        }
+        .time {
+          margin: 10px 0;
+        }
+        .err-find {
+          min-height: 60px;
+          margin: 5px 0;
+
+          .textContent {
+            margin: 10 0px;
+          }
+          .btn {
+            width: 12%;
+            height: 32px;
+            margin: 10px 0;
+            text-align: center;
+            line-height: 32px;
+            display: block;
+            background-color: rgba(219, 219, 219, 0.8);
           }
         }
       }
@@ -197,13 +218,13 @@
     margin-bottom: 1rem;
   }
   .btn {
-    // background-color: rgba(219, 219, 219, 0.8);
-        background: #11a8cd;
+    width: 20% !important;
+    background: #11a8cd !important;
     color: #fff;
     padding: 0.4rem;
     margin-top: 0.2rem;
   }
-  .tiem {
+  .time {
     font-size: 0.8rem;
     margin-bottom: 0.3rem;
   }
@@ -211,7 +232,7 @@
     height: 0px;
     min-height: 100px !important;
     max-height: 266px !important;
-    overflow: scroll;
+    overflow: auto;
   }
   .columns-left {
     margin-top: 300px;
@@ -275,17 +296,13 @@
 <template>
   <div class="columns">
     <div class="columns-left">
-      <div
-        class="card-content"
+      <div class="card-content"
         v-for="item in errData"
-        :key="item.id"
-      >
+        :key="item.id">
         <div class="top-Img">
           <!-- https://picsum.photos/369/140 -->
-          <img
-            :src="item.imgUrl"
-            alt=""
-          >
+          <img :src="item.imgUrl"
+            alt="">
         </div>
         <div class="bottom-content">
           <div class="labelText">
@@ -294,19 +311,15 @@
             <a href="">tutorial</a>
           </div>
           <h2>{{item.mainName}}</h2>
-          <p class="tiem">2018-02-12</p>
-          <div
-            class="err-find"
+          <p class="time">2018-02-12</p>
+          <div class="err-find"
             v-for="(content,index) in item.content"
-            :key="index"
-          >
+            :key="index">
             <p class="textContent">
               {{index+1}}.{{content.errName}}
             </p>
-            <a
-              :href="content.slovePath"
-              class="btn"
-            >Let's go!</a>
+            <a :href="content.slovePath"
+              class="btn">Let's go!</a>
           </div>
         </div>
       </div>
@@ -314,19 +327,15 @@
     <div class="columns-right">
       <div class="serach">
         <span class="iconfont icon-sousou"></span>
-        <input
-          type="text"
+        <input type="text"
           class="serach-value"
-          placeholder="Seach every.."
-        >
+          placeholder="Seach every..">
       </div>
       <div class="user-card">
         <div class="head-container">
           <div class="head-img">
-            <img
-              src="https://haojen.github.io/Claudia-theme-blog/images/avatar.jpg"
-              alt=""
-            >
+            <img src="https://haojen.github.io/Claudia-theme-blog/images/avatar.jpg"
+              alt="">
           </div>
         </div>
         <h3 class="username">Evan Mo</h3>
@@ -342,28 +351,18 @@
           <span>河北省</span>
         </div>
         <div class="ns-container">
-          <a
-            href="https://github.com/yn22638"
+          <a href="https://github.com/yn22638"
             class="iconfont icon-github"
-            style="font-size: 37px"
-          ></a>
-          <a
-            href="http://wpa.qq.com/msgrd?v=3&uin=1941263063&site=qq&menu=yes"
-            class="iconfont icon-qq-copy-copy"
-          ></a>
-          <a
-            href="https://gitee.com/Yn_22638"
-            class="iconfont icon-gitee-fill-round"
-          ></a>
-          <a
-            href=""
+            style="font-size: 37px"></a>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=1941263063&site=qq&menu=yes"
+            class="iconfont icon-qq-copy-copy"></a>
+          <a href="https://gitee.com/Yn_22638"
+            class="iconfont icon-gitee-fill-round"></a>
+          <a href=""
             class="iconfont icon-twitter"
-            style="font-size: 37px"
-          ></a>
-          <a
-            href=""
-            class="iconfont icon-social-_round-facebook"
-          ></a>
+            style="font-size: 37px"></a>
+          <a href=""
+            class="iconfont icon-social-_round-facebook"></a>
         </div>
       </div>
 
