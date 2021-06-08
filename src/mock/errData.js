@@ -330,6 +330,30 @@ const errList = [
         slovePath: 'https://www.cnblogs.com/lidonglin/p/13072717.html'
       }
     ]
+  },
+  {
+    idd: 11,
+    imgUrl: 'https://picsum.photos/369/150',
+    mainName: 'Pc端自适应',
+    content: [
+      {
+        errName: '案例',
+        slovePath: ' http://pxtorem.com/'
+      },
+      {
+        errName: 'PC端适配屏幕尺寸',
+        slovePath: 'https://waliblog.com/css/2018/03/19/compatible.html'
+      },
+      {
+        errName: 'pc段自适应方案',
+        slovePath: 'https://www.cnblogs.com/xiaotiejiang/p/10973917.html'
+      },
+      {
+        errName: 'pc端字体大小自适应几种方法',
+        slovePath:
+          'https://blog.csdn.net/weixin_30566063/article/details/97879308'
+      }
+    ]
   }
 ]
 const a = [
