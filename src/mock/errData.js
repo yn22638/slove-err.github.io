@@ -359,8 +359,9 @@ const errList = [
         slovePath: 'https://blog.csdn.net/Crab0314/article/details/80106365'
       },
       {
-        errName:"GitLab配置SSH密钥",
-        slovePath:"https://blog.csdn.net/lizhiqiang1217/article/details/88801158"
+        errName: 'GitLab配置SSH密钥',
+        slovePath:
+          'https://blog.csdn.net/lizhiqiang1217/article/details/88801158'
       }
     ]
   },
@@ -422,12 +423,16 @@ const errList = [
         slovePath: ''
       }
     ]
-  },{
-    id:13,
-    mainName:"各种安装",
-    content:[
-      errName:"各种插件安装",
-      slovePath:"https://github.com/yn22638/-Rising-road_text/blob/master/Note/%E5%90%84%E7%A7%8D%E5%AE%89%E8%A3%85.md"
+  },
+  {
+    id: 13,
+    mainName: '各种安装',
+    content: [
+      {
+        errName: '各种插件安装',
+        slovePath:
+          'https://github.com/yn22638/-Rising-road_text/blob/master/Note/%E5%90%84%E7%A7%8D%E5%AE%89%E8%A3%85.md'
+      }
     ]
   }
 ]
