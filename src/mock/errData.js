@@ -391,6 +391,7 @@ const errList = [
   },
   {
     id: 12,
+    imgUrl: 'https://picsum.photos/369/152',
     mainName: 'Mysql',
     content: [
       {
@@ -426,6 +427,7 @@ const errList = [
   },
   {
     id: 13,
+    imgUrl: 'https://picsum.photos/369/153',
     mainName: '各种安装',
     content: [
       {
@@ -440,6 +442,7 @@ const a = [
   {
     id: 0,
     mainName: '',
+    imgUrl: 'https://picsum.photos/369/151',
     content: [
       {
         errName: '',
