@@ -383,6 +383,48 @@ const errList = [
           'https://blog.csdn.net/weixin_30566063/article/details/97879308'
       }
     ]
+  },
+  {
+    id: 12,
+    mainName: 'Mysql',
+    content: [
+      {
+        errName: 'sqlyog证书秘钥（注册码）',
+        slovePath:
+          'https://blog.csdn.net/qq_38486203/article/details/81837136?utm_medium=distribute.pc_feed_404.none-task-blog-2~default~BlogCommendFromBaidu~default-2.nonecase&depth_1-utm_source=distribute.pc_feed_404.none-task-blog-2~default~BlogCommendFromBaidu~default-2.nonecas'
+      },
+      {
+        errName:
+          'Navicat连接Mysql报错：Client does not support authentication protocol requested by server；',
+        slovePath: 'https://www.cnblogs.com/zichuan/p/9203129.html'
+      },
+      {
+        errName: 'Msql插入表数据.txt',
+        slovePath:
+          'https://github.com/yn22638/-Rising-road_text/blob/master/Note/Msql%E6%8F%92%E5%85%A5%E8%A1%A8%E6%95%B0%E6%8D%AE.txt'
+      },
+      {
+        errName: 'mysql备份与还原数据.txt',
+        slovePath:
+          'https://github.com/yn22638/-Rising-road_text/blob/master/Note/mysql%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F%E6%95%B0%E6%8D%AE.txt'
+      },
+      {
+        errName: 'mysql知识点',
+        slovePath:
+          'https://github.com/yn22638/-Rising-road_text/blob/master/Note/mysql%E7%9F%A5%E8%AF%86%E7%82%B9.md'
+      },
+      {
+        errName: '',
+        slovePath: ''
+      }
+    ]
+  },{
+    id:13,
+    mainName:"各种安装",
+    content:[
+      errName:"各种插件安装",
+      slovePath:"https://github.com/yn22638/-Rising-road_text/blob/master/Note/%E5%90%84%E7%A7%8D%E5%AE%89%E8%A3%85.md"
+    ]
   }
 ]
 const a = [
