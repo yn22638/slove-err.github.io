@@ -357,6 +357,10 @@ const errList = [
       {
         errName: '【Git】记录git常遇到的问题及解决方法',
         slovePath: 'https://blog.csdn.net/Crab0314/article/details/80106365'
+      },
+      {
+        errName:"GitLab配置SSH密钥",
+        slovePath:"https://blog.csdn.net/lizhiqiang1217/article/details/88801158"
       }
     ]
   },
