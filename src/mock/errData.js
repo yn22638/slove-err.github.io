@@ -284,6 +284,10 @@ const errList = [
       {
         errName: "Cannot find module 'vue-loader-v16/package.json'",
         slovePath: 'https://zhuanlan.zhihu.com/p/227797212'
+      },
+      {
+        errName: 'vue引用模块时import后面加上｛｝和不加｛｝的区别',
+        slovePath: 'https://blog.csdn.net/ALakers/article/details/108568999'
       }
     ]
   },
@@ -322,6 +326,11 @@ const errList = [
         errName: '二维数组',
         slovePath:
           'https://blog.csdn.net/weixin_43486332/article/details/107451717'
+      },
+      {
+        errName: '如何简单实用正则表达式',
+        slovePath:
+          'https://blog.csdn.net/weixin_40408910/article/details/80598640'
       }
     ]
   },
@@ -418,10 +427,6 @@ const errList = [
         errName: 'mysql知识点',
         slovePath:
           'https://github.com/yn22638/-Rising-road_text/blob/master/Note/mysql%E7%9F%A5%E8%AF%86%E7%82%B9.md'
-      },
-      {
-        errName: '',
-        slovePath: ''
       }
     ]
   },
@@ -434,6 +439,21 @@ const errList = [
         errName: '各种插件安装',
         slovePath:
           'https://github.com/yn22638/-Rising-road_text/blob/master/Note/%E5%90%84%E7%A7%8D%E5%AE%89%E8%A3%85.md'
+      }
+    ]
+  },
+  {
+    id: 14,
+    imgUrl: 'https://picsum.photos/369/154',
+    mainName: '常用工具',
+    content: [
+      {
+        errName: 'px,pt,em换算表',
+        slovePath: 'https://www.runoob.com/w3cnote/px-pt-em-convert-table.html'
+      },
+      {
+        errName: 'base64图片在线转换',
+        slovePath: 'http://tool.chinaz.com/tools/imgtobase'
       }
     ]
   }
