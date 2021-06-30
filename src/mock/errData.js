@@ -288,6 +288,10 @@ const errList = [
       {
         errName: 'vue引用模块时import后面加上｛｝和不加｛｝的区别',
         slovePath: 'https://blog.csdn.net/ALakers/article/details/108568999'
+      },
+      {
+        errName: 'vue-router导航守卫仔细讲解',
+        slovePath: 'https://es6.ruanyifeng.com/#docs/object-methods'
       }
     ]
   },
@@ -371,6 +375,10 @@ const errList = [
         errName: 'GitLab配置SSH密钥',
         slovePath:
           'https://blog.csdn.net/lizhiqiang1217/article/details/88801158'
+      },
+      {
+        errName: '向Git证明自己的身份，Git别名配置',
+        slovePath: 'https://www.cnblogs.com/lipijin/p/4118059.html'
       }
     ]
   },
@@ -454,6 +462,60 @@ const errList = [
       {
         errName: 'base64图片在线转换',
         slovePath: 'http://tool.chinaz.com/tools/imgtobase'
+      }
+    ]
+  },
+  {
+    id: 15,
+    imgUrl: 'https://picsum.photos/369/155',
+    mainName: 'HTML',
+    content: [
+      {
+        errName: 'HTML中嵌入SVG图片的N种方式',
+        slovePath: 'https://blog.csdn.net/z69183787/article/details/85233468'
+      }
+    ]
+  },
+  {
+    id: 16,
+    imgUrl: 'https://picsum.photos/369/156',
+    mainName: 'Echarts',
+    content: [
+      {
+        errName: '官方文档',
+        slovePath: 'https://echarts.apache.org/'
+      },
+      {
+        errName:
+          'echarts配置环形饼图的参数，以及牵引线显示百分比，中间数据,牵引线标签不重叠',
+        slovePath: 'https://www.cnblogs.com/cyhsmile/p/12378116.html'
+      },
+      {
+        errName: '在Vue中使用echarts',
+        slovePath: 'https://www.jianshu.com/p/cf0a54374419'
+      },
+      {
+        errName: 'vue使用echarts遇到的坑',
+        slovePath:
+          'https://blog.csdn.net/weixin_42475867/article/details/111475058'
+      },
+      {
+        errName: 'echarts 饼图设置指示线的长度',
+        slovePath: 'https://blog.csdn.net/n_meng/article/details/74537731'
+      },
+      {
+        errName: 'echarts饼状图圆环位置修改样式调整',
+        slovePath:
+          'https://blog.csdn.net/If_CannewBoyFriend/article/details/104049062'
+      },
+      {
+        errName: 'echarts--解决图例和文字位置反了的问题',
+        slovePath:
+          'https://blog.csdn.net/weixin_42288182/article/details/90600580'
+      },
+      {
+        errName: 'eCharts——柱状图中的tooltip详解',
+        slovePath: 'https://blog.csdn.net/qq_39354957/article/details/108484027'
       }
     ]
   }
