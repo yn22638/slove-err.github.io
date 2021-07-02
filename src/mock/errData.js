@@ -516,6 +516,23 @@ const errList = [
       {
         errName: 'eCharts——柱状图中的tooltip详解',
         slovePath: 'https://blog.csdn.net/qq_39354957/article/details/108484027'
+      },
+      {
+        errName: 'EChart 文字大小调整',
+        slovePath: 'https://blog.csdn.net/xuaner8786/article/details/79241689'
+      },
+      {
+        errName: 'echarts2 饼图处理标签文字过长使之达到指定字数换行的目的',
+        slovePath: 'https://www.cnblogs.com/zjjDaily/p/8022944.html'
+      },
+      {
+        errName: 'echarts中饼图标签重叠的解决方案',
+        slovePath: 'https://blog.csdn.net/qq_37899792/article/details/90747057'
+      },
+      {
+        errName: 'Echarts 饼图 legend以及series中label文字超长被覆盖解决方法',
+        slovePath:
+          'https://blog.csdn.net/weixin_43953518/article/details/115121356'
       }
     ]
   }
