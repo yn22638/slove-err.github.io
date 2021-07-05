@@ -86,6 +86,13 @@ const errList = [
         errName: 'VSCode插件大全',
         slovePath:
           '1.Path Intellisense 2.Prettier - Code formatter 3.Settings Sync 4.Settings Sync Colorizer 5.Toggle Quotes  6.Vetur 7.View In Browser 8.Vue Peek'
+      },
+      {
+        errName: "如何删除VScode中所有扩展",
+        slovePath: "https://www.php.cn/tool/vscode/442070.html"
+      }, {
+        errName: "vscode使用Settings Sync同步本地设置和插件到GitHub，实现不同设备的设置统一",
+        slovePath: "https://blog.csdn.net/Gabriel_wei/article/details/90236352"
       }
     ]
   },
@@ -533,6 +540,14 @@ const errList = [
         errName: 'Echarts 饼图 legend以及series中label文字超长被覆盖解决方法',
         slovePath:
           'https://blog.csdn.net/weixin_43953518/article/details/115121356'
+      },
+      {
+        errName: 'Echarts图例位置 - legend属性',
+        slovePath: 'https://blog.csdn.net/woteafuck/article/details/91986313'
+      },
+      {
+        errName: 'Echarts - legend属性设置',
+        slovePath: 'https://www.jianshu.com/p/79c8acffeb53'
       }
     ]
   }
