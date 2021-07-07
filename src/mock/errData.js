@@ -299,6 +299,10 @@ const errList = [
       {
         errName: 'vue-router导航守卫仔细讲解',
         slovePath: 'https://es6.ruanyifeng.com/#docs/object-methods'
+      },
+      {
+        errName:"Vue报错：Unnecessary use of boolean literals in conditional expression",
+        slovePath:"https://blog.csdn.net/qq_42033567/article/details/106469910"
       }
     ]
   },
@@ -454,6 +458,10 @@ const errList = [
         errName: '各种插件安装',
         slovePath:
           'https://github.com/yn22638/-Rising-road_text/blob/master/Note/%E5%90%84%E7%A7%8D%E5%AE%89%E8%A3%85.md'
+      },
+      {
+      errName:"vsCode格式化问题",
+      slovePath:"https://zhuanlan.zhihu.com/p/103492877"
       }
     ]
   },
@@ -550,9 +558,7 @@ const errList = [
         slovePath: 'https://www.jianshu.com/p/79c8acffeb53'
       }
     ]
-  }
-]
-const a = [
+  },
   {
     id: 0,
     mainName: '',
@@ -574,6 +580,27 @@ const a = [
         errName: '',
         slovePath: ''
       }
+    ]
+  }
+]
+const a = [
+  {
+    id: 17,
+    mainName: 'typeScript',
+    imgUrl: 'https://picsum.photos/369/157',
+    content: [
+      {
+        errName: '学习文档',
+        slovePath: 'https://juejin.cn/post/6872111128135073806#heading-19'
+      },
+      {
+        errName: 'Could not find a declaration file for module ‘xxx‘. ‘xxx‘ implicitly has an ‘any‘ type.',
+        slovePath: 'https://blog.csdn.net/z17864151193/article/details/108518189'
+      },
+      {
+        errName: '奇葩错误',
+        slovePath: 'https://stackoverflow.com/questions/41292559/could-not-find-a-declaration-file-for-module-module-name-path-to-module-nam'
+      },
     ]
   }
 ]
