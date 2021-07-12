@@ -370,6 +370,10 @@ const errList = [
       {
         errName:"css3实现文字闪烁效果的三种展示方式",
         slovePath:"https://blog.csdn.net/art_people/article/details/104768666/?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242"
+      },
+      {
+      errName:"如何修改el-form标签中label的文字颜色",
+      slovePath:"https://www.jianshu.com/p/465207874a10"
       }
     ]
   },
