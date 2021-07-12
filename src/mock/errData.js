@@ -59,6 +59,10 @@ const errList = [
         errName: 'vue element-ui 页面刷新自动弹Message问题',
         slovePath:
           'https://blog.csdn.net/longzhoufeng/article/details/105890788'
+      },
+      {
+        errName:"elementUI el-dialog弹框居中",
+        slovePath:"https://www.cnblogs.com/dyy-dida/p/11313753.html"
       }
     ]
   },
@@ -362,6 +366,10 @@ const errList = [
       {
         errName: 'Css面试题',
         slovePath: 'https://blog.csdn.net/u014697639/article/details/80311559'
+      },
+      {
+        errName:"css3实现文字闪烁效果的三种展示方式",
+        slovePath:"https://blog.csdn.net/art_people/article/details/104768666/?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242"
       }
     ]
   },
