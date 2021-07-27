@@ -307,6 +307,9 @@ const errList = [
       {
         errName:"Vue报错：Unnecessary use of boolean literals in conditional expression",
         slovePath:"https://blog.csdn.net/qq_42033567/article/details/106469910"
+      },{
+      errName:"vue中根据内容生成对应的二维码",
+      slovePath:"https://blog.csdn.net/weixin_46016926/article/details/109143646"
       }
     ]
   },
@@ -572,6 +575,38 @@ const errList = [
     ]
   },
   {
+    id: 17,
+    mainName: 'typeScript',
+    imgUrl: 'https://picsum.photos/369/157',
+    content: [
+      {
+        errName: '学习文档',
+        slovePath: 'https://juejin.cn/post/6872111128135073806#heading-19'
+      },
+      {
+        errName: 'Could not find a declaration file for module ‘xxx‘. ‘xxx‘ implicitly has an ‘any‘ type.',
+        slovePath: 'https://blog.csdn.net/z17864151193/article/details/108518189'
+      },
+      {
+        errName: '奇葩错误',
+        slovePath: 'https://stackoverflow.com/questions/41292559/could-not-find-a-declaration-file-for-module-module-name-path-to-module-nam'
+      },
+    ]
+  },
+  {
+    id: 18,
+    mainName: 'uniapp',
+    imgUrl: 'https://picsum.photos/369/158',
+    content: [
+      {
+        errName: 'uni-app中更改复选框的默认样式',
+        slovePath: 'https://blog.csdn.net/huanhuan03/article/details/105115103'
+      }
+    ]
+  }
+]
+const a = [
+{
     id: 0,
     mainName: '',
     imgUrl: 'https://picsum.photos/369/151',
@@ -594,27 +629,7 @@ const errList = [
       }
     ]
   }
-]
-const a = [
-  {
-    id: 17,
-    mainName: 'typeScript',
-    imgUrl: 'https://picsum.photos/369/157',
-    content: [
-      {
-        errName: '学习文档',
-        slovePath: 'https://juejin.cn/post/6872111128135073806#heading-19'
-      },
-      {
-        errName: 'Could not find a declaration file for module ‘xxx‘. ‘xxx‘ implicitly has an ‘any‘ type.',
-        slovePath: 'https://blog.csdn.net/z17864151193/article/details/108518189'
-      },
-      {
-        errName: '奇葩错误',
-        slovePath: 'https://stackoverflow.com/questions/41292559/could-not-find-a-declaration-file-for-module-module-name-path-to-module-nam'
-      },
-    ]
-  }
+  
 ]
 export default {
   errList
