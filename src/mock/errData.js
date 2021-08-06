@@ -603,6 +603,52 @@ const errList = [
         slovePath: 'https://blog.csdn.net/huanhuan03/article/details/105115103'
       }
     ]
+  },
+  {
+    id: 19,
+    mainName: '歇后语',
+    imgUrl: 'https://picsum.photos/369/159',
+    content: [
+      {
+        errName: '歇后语百度',
+        slovePath: 'https://baike.baidu.com/item/%E6%AD%87%E5%90%8E%E8%AF%AD/93030?fr=aladdin'
+      },
+      {
+        errName: '小学生歇后语大全(142条)',
+        slovePath: 'http://xhy.5156edu.com/page/z7807m8146j18661.html'
+      }
+    ]
+  },
+  {
+    id: 20,
+    mainName: 'vue知识点',
+    imgUrl: 'https://picsum.photos/369/160',
+    content: [
+      {
+        errName: '跟keep-alive有关的生命周期是哪些？描述下这些生命周期',
+        slovePath: 'https://blog.csdn.net/xiaoHelloWord/article/details/96924619'
+      },
+      {
+        errName: 'vue的双向绑定原理及实现',
+        slovePath: 'https://www.cnblogs.com/libin-1/p/6893712.html'
+      },
+      {
+        errName: '面试官：你了解 vue 的diff算法吗？',
+        slovePath: 'https://blog.csdn.net/weixin_33923148/article/details/91474284'
+      },
+      {
+        errName: '[vue] prop是怎么做验证的？可以设置默认值吗？',
+        slovePath: 'https://blog.csdn.net/weixin_43392489/article/details/114178192'
+      },
+      {
+        errName: '[vue] 说说你对Object.defineProperty的理解',
+        slovePath: 'https://blog.csdn.net/weixin_43392489/article/details/114176299'
+      },
+      {
+        errName: '[vue] 说说你对vue的表单修饰符.lazy的理解',
+        slovePath: 'https://github.com/haizlin/fe-interview/issues/458?spm=a2c6h.13066369.0.0.512222534Y96WR'
+      },
+    ]
   }
 ]
 const a = [
