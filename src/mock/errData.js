@@ -648,6 +648,10 @@ const errList = [
         errName: '[vue] 说说你对vue的表单修饰符.lazy的理解',
         slovePath: 'https://github.com/haizlin/fe-interview/issues/458?spm=a2c6h.13066369.0.0.512222534Y96WR'
       },
+      {
+        errName: 'vue click.stop阻止点击事件继续传播',
+        slovePath: 'https://www.cnblogs.com/dongyuezhuang/p/11527447.html'
+      },
     ]
   }
 ]
