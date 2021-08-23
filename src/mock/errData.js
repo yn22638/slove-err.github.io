@@ -316,7 +316,7 @@ const errList = [
   {
     id: 7,
     imgUrl: 'https://picsum.photos/369/147',
-    mainName: 'NPM | CNPM',
+    mainName: 'NPM | CNPM | YARN',
     content: [
       {
         errName:
@@ -331,7 +331,19 @@ const errList = [
       {
         errName: 'node工具之nodemon',
         slovePath: 'https://www.jianshu.com/p/f60e14db0b4e'
-      }
+      },
+      {
+        errName: 'npm 和 yarn 缓存清理',
+        slovePath: 'https://blog.csdn.net/qq_39043923/article/details/90694137'
+      },
+      {
+        errName: 'node工具之nodemon',
+        slovePath: 'https://www.jianshu.com/p/f60e14db0b4e'
+      },
+      {
+        errName: 'node工具之nodemon',
+        slovePath: 'https://www.jianshu.com/p/f60e14db0b4e'
+      },
     ]
   },
 
@@ -353,7 +365,28 @@ const errList = [
         errName: '如何简单实用正则表达式',
         slovePath:
           'https://blog.csdn.net/weixin_40408910/article/details/80598640'
-      }
+      },
+      {
+        errName: 'js运算符',
+        slovePath:
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#%e9%80%bb%e8%be%91%e9%9d%9e%ef%bc%88!%ef%bc%89'
+      },
+      {
+        errName: 'JavaScript中的Object.defineProperty()和defineProperties()',
+        slovePath:
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#%e9%80%bb%e8%be%91%e9%9d%9e%ef%bc%88!%ef%bc%89'
+      },
+      {
+        errName: 'js运算符',
+        slovePath:
+          'https://segmentfault.com/a/1190000011294519'
+      },
+     
+      {
+        errName: 'dayjs日期格式化',
+        slovePath:
+          'https://www.cnblogs.com/cjrfan/p/9154539.html'
+      },
     ]
   },
   {
@@ -405,7 +438,24 @@ const errList = [
       {
         errName: '向Git证明自己的身份，Git别名配置',
         slovePath: 'https://www.cnblogs.com/lipijin/p/4118059.html'
-      }
+      },
+       {
+        errName: 'git fetch & pull详解',
+        slovePath:
+          'https://www.cnblogs.com/runnerjack/p/9342362.html'
+      },
+      {
+        errName: 'git回退',
+        slovePath: 'https://blog.csdn.net/zt1519/article/details/81713748'
+      },
+      {
+        errName: 'sourceTree操作',
+        slovePath: 'https://www.cnblogs.com/fisherbook/p/11397168.html'
+      },
+      {
+        errName: 'git操作',
+        slovePath: 'https://blog.csdn.net/yanlaifan/article/details/104778676'
+      },
     ]
   },
   {
