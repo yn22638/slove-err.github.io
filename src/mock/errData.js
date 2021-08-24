@@ -531,6 +531,22 @@ const errList = [
     ]
   },
   {
+    id: 21,
+    imgUrl: 'https://picsum.photos/369/170',
+    mainName: 'siri',
+    content: [
+      {
+        errName: '盘点苹果手机Siri的十大有趣互动：既能整蛊，也能撩妹？',
+        slovePath:
+          'https://baijiahao.baidu.com/s?id=1592041519921355367&wfr=spider&for=pc'
+      },
+      {
+      errName:"苹果语音助手siri情话大全 siri不止会卖萌",
+      slovePath:"http://www.d9soft.com/zixun/55155.html"
+      }
+    ]
+  },
+  {
     id: 14,
     imgUrl: 'https://picsum.photos/369/154',
     mainName: '常用工具',
