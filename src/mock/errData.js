@@ -63,7 +63,19 @@ const errList = [
       {
         errName:"elementUI el-dialog弹框居中",
         slovePath:"https://www.cnblogs.com/dyy-dida/p/11313753.html"
-      }
+      },
+      {
+        errName:"Vue+element tree使用，当弹窗关闭时，this.$refs.tree.setCheckedKeys([])不能清空选中",
+        slovePath:"https://blog.csdn.net/qq_43485006/article/details/113359407"
+      },
+      {
+        errName:"vue使用 elementUI中 el-tree setCheckedKeys清空数据不全问题",
+        slovePath:"https://blog.csdn.net/weixin_42650105/article/details/109512817"
+      },
+      {
+        errName:"记录：elementUI库中el-tree清除已选中的",
+        slovePath:"https://www.jianshu.com/p/83673d6578d4"
+      },
     ]
   },
   {
