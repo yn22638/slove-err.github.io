@@ -168,6 +168,10 @@ const errList = [
         slovePath: 'https://blog.csdn.net/qq_34803821/article/details/90451420'
       },
       {
+        errName: 'TypeError: Cannot read property ‘resetFields‘ of undefined解决方案',
+        slovePath: 'https://blog.csdn.net/weixin_45393094/article/details/115584032'
+      },
+      {
         errName: 'Axios请求的封装',
         slovePath: 'https://www.cnblogs.com/zhang-bobo/p/13738914.html'
       },
