@@ -342,7 +342,7 @@
         <div class="introduce">
           <blockquote class="iconfont icon-baojiaquotation2 blockTop"></blockquote>
           <span>哪有什么十全十美，凡事只求半称心</span>
-          <!-- <span>想要的都拥有,得不到的都释怀</span> -->
+          <span>想要的都拥有,得不到的都释怀</span>
           <!-- <span class="text-introduce">愿你一生努力,一生被爱</span> -->
           <blockquote class="iconfont icon-baojiaquotation blockBottom"></blockquote>
         </div>
@@ -374,11 +374,11 @@ import errData from '../mock/errData.js'
 export default {
   data() {
     return {
-      errData: []
+      errData: [],
     }
   },
   mounted() {
     this.errData = errData.errList
-  }
+  },
 }
 </script>
