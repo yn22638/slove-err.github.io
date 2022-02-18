@@ -1,14 +1,10 @@
 <template>
   <div class="container">
-    <img class="bg"
-      :src="url" />
+    <img class="bg" :src="url" />
     <div class="btn">
-      <a href="/"
-        class="goindex">返回首页</a>
-      <a :href="httpword"
-        target="_blank"
-        class="lx">咨询站长</a>
-      <div style="clear:both;"></div>
+      <a href="/" class="goindex">返回首页</a>
+      <a :href="httpword" target="_blank" class="lx">咨询站长</a>
+      <div style="clear: both"></div>
     </div>
   </div>
 </template>
@@ -17,7 +13,7 @@
 export default {
   components: {},
   props: {},
-  data() {
+  data () {
     return {
       // 图片
       url: require('../../assets/404.png'),
@@ -27,7 +23,7 @@ export default {
   },
   computed: {},
   methods: {},
-  mounted() {}
+  mounted () { }
 }
 </script>
 
