@@ -296,13 +296,10 @@
 <template>
   <div class="columns">
     <div class="columns-left">
-      <div class="card-content"
-        v-for="item in errData"
-        :key="item.id">
+      <div class="card-content" v-for="item in errData" :key="item.id">
         <div class="top-Img">
           <!-- https://picsum.photos/369/140 -->
-          <img :src="item.imgUrl"
-            alt="">
+          <img :src="item.imgUrl" alt="" />
         </div>
         <div class="bottom-content">
           <div class="labelText">
@@ -310,16 +307,15 @@
             <a href="">cuite</a>
             <a href="">tutorial</a>
           </div>
-          <h2>{{item.mainName}}</h2>
+          <h2>{{ item.mainName }}</h2>
           <p class="time">2018-02-12</p>
-          <div class="err-find"
-            v-for="(content,index) in item.content"
-            :key="index">
-            <p class="textContent">
-              {{index+1}}.{{content.errName}}
-            </p>
-            <a :href="content.slovePath"
-              class="btn">Let's go!</a>
+          <div
+            class="err-find"
+            v-for="(content, index) in item.content"
+            :key="index"
+          >
+            <p class="textContent">{{ index + 1 }}.{{ content.errName }}</p>
+            <a :href="content.slovePath" class="btn">Let's go!</a>
           </div>
         </div>
       </div>
@@ -327,57 +323,63 @@
     <div class="columns-right">
       <div class="serach">
         <span class="iconfont icon-sousou"></span>
-        <input type="text"
-          class="serach-value"
-          placeholder="Seach every..">
+        <input type="text" class="serach-value" placeholder="Seach every.." />
       </div>
       <div class="user-card">
         <div class="head-container">
           <div class="head-img">
-            <img src="https://haojen.github.io/Claudia-theme-blog/images/avatar.jpg"
-              alt="">
+            <img
+              src="https://haojen.github.io/Claudia-theme-blog/images/avatar.jpg"
+              alt=""
+            />
           </div>
         </div>
         <h3 class="username">Evan Mo</h3>
         <div class="introduce">
-          <blockquote class="iconfont icon-baojiaquotation2 blockTop"></blockquote>
+          <blockquote
+            class="iconfont icon-baojiaquotation2 blockTop"
+          ></blockquote>
           <span>哪有什么十全十美，凡事只求半称心</span>
           <!-- <span>想要的都拥有,得不到的都释怀</span> -->
           <!-- <span class="text-introduce">愿你一生努力,一生被爱</span> -->
-          <blockquote class="iconfont icon-baojiaquotation blockBottom"></blockquote>
+          <blockquote
+            class="iconfont icon-baojiaquotation blockBottom"
+          ></blockquote>
         </div>
         <div class="address">
           <blockquote class="iconfont icon-dizhi"></blockquote>
           <span>河北省</span>
         </div>
         <div class="ns-container">
-          <a href="https://github.com/yn22638"
+          <a
+            href="https://github.com/yn22638"
             class="iconfont icon-github"
-            style="font-size: 37px"></a>
-          <a href="http://wpa.qq.com/msgrd?v=3&uin=1941263063&site=qq&menu=yes"
-            class="iconfont icon-qq-copy-copy"></a>
-          <a href="https://gitee.com/Yn_22638"
-            class="iconfont icon-gitee-fill-round"></a>
-          <a href=""
-            class="iconfont icon-twitter"
-            style="font-size: 37px"></a>
-          <a href=""
-            class="iconfont icon-social-_round-facebook"></a>
+            style="font-size: 37px"
+          ></a>
+          <a
+            href="http://wpa.qq.com/msgrd?v=3&uin=1941263063&site=qq&menu=yes"
+            class="iconfont icon-qq-copy-copy"
+          ></a>
+          <a
+            href="https://gitee.com/Yn_22638"
+            class="iconfont icon-gitee-fill-round"
+          ></a>
+          <a href="" class="iconfont icon-twitter" style="font-size: 37px"></a>
+          <a href="" class="iconfont icon-social-_round-facebook"></a>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 <script>
 import errData from '../mock/errData.js'
 export default {
-  data() {
+  data () {
     return {
       errData: []
     }
   },
-  mounted() {
+  mounted () {
     this.errData = errData.errList
   }
 }
