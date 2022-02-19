@@ -187,6 +187,34 @@
     }
   }
 }
+.animain-box {
+  padding-top: 300px;
+}
+
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
 
 @media screen and (max-width: 600px) {
   .columns .columns-left {
@@ -221,7 +249,6 @@
     width: 20% !important;
     background: #11a8cd !important;
     color: #fff;
-    padding: 0.4rem;
     margin-top: 0.2rem;
   }
   .time {
@@ -295,7 +322,13 @@
 </style>
 <template>
   <div class="columns">
-    <div class="columns-left">
+    <div class="columns-left"
+      style="z-index:100;position: absolute">
+      <button @click="isShowBlog = !isShowBlog"
+        class="myButton">点击切换{{isShowBlog?'博客':'雪容融'}}</button>
+    </div>
+    <div class="columns-left"
+      v-show="!isShowBlog">
       <div class="card-content"
         v-for="item in errData"
         :key="item.id">
@@ -319,11 +352,13 @@
               {{index+1}}.{{content.errName}}
             </p>
             <a :href="content.slovePath"
-              class="btn">Let's go!</a>
+              class="btn">Go!</a>
           </div>
         </div>
       </div>
     </div>
+    <xue-rong-rong v-show="isShowBlog"
+      class='animain-box'></xue-rong-rong>
     <div class="columns-right">
       <div class="serach">
         <span class="iconfont icon-sousou"></span>
@@ -341,9 +376,9 @@
         <h3 class="username">Evan Mo</h3>
         <div class="introduce">
           <blockquote class="iconfont icon-baojiaquotation2 blockTop"></blockquote>
-          <span>哪有什么十全十美，凡事只求半称心</span>
-          <!-- <span>想要的都拥有,得不到的都释怀</span> -->
-          <!-- <span class="text-introduce">愿你一生努力,一生被爱</span> -->
+          <!-- <span class="text-introduce">哪有什么十全十美，凡事只求半称心</span> -->
+          <!-- <span class="text-introduce">想要的都拥有,得不到的都释怀</span> -->
+          <span class="text-introduce">愿你一生努力,一生被爱</span>
           <blockquote class="iconfont icon-baojiaquotation blockBottom"></blockquote>
         </div>
         <div class="address">
@@ -365,20 +400,48 @@
             class="iconfont icon-social-_round-facebook"></a>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 <script>
 import errData from '../mock/errData.js'
+import xueRongRong from './xuerongrong.vue'
 export default {
+  components: {
+    xueRongRong,
+  },
   data() {
     return {
-      errData: []
+      errData: [],
+      isShowBlog: true,
     }
   },
   mounted() {
+    console.log(
+      '%chello world',
+      `padding: 10px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color:silver;
+  background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50% 100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px;`
+    )
+    var ascii = `
+  _    _      _ _        __          __        _     _
+ | |  | |    | | |       \\ \\        / /       | |   | |
+ | |__| | ___| | | ___    \\ \\  /\\  / /__  _ __| | __| |
+ |  __  |/ _ \\ | |/ _ \\    \\ \\/  \\/ / _ \\| '__| |/ _\` |
+ | |  | |  __/ | | (_) |    \\  /\\  / (_) | |  | | (_| |
+ |_|  |_|\\___|_|_|\\___/      \\/  \\/ \\___/|_|  |_|\\__,_|
+`
+    console.log(`%c${ascii}`, 'color:#e59de3')
     this.errData = errData.errList
-  }
+  },
 }
 </script>
