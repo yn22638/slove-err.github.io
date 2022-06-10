@@ -1,7 +1,5 @@
 <style lang="scss" scoped>
-/* pageFullScreen在index.css */
 .columns {
-  // background-color: #F5F5F5;
   .columns-left {
     float: left;
     min-width: 600px;
@@ -323,11 +321,6 @@
 <template>
   <div class="columns">
     <div class="columns-left"
-      style="z-index:100;position: absolute">
-      <button @click="isShowBlog = !isShowBlog"
-        class="myButton">点击切换{{isShowBlog?'博客':'雪容融'}}</button>
-    </div>
-    <div class="columns-left"
       v-show="!isShowBlog">
       <div class="card-content"
         v-for="item in errData"
@@ -357,8 +350,6 @@
         </div>
       </div>
     </div>
-    <xue-rong-rong v-show="isShowBlog"
-      class='animain-box'></xue-rong-rong>
     <div class="columns-right">
       <div class="serach">
         <span class="iconfont icon-sousou"></span>
@@ -405,11 +396,7 @@
 </template>
 <script>
 import errData from '../mock/errData.js'
-import xueRongRong from './xuerongrong.vue'
 export default {
-  components: {
-    xueRongRong,
-  },
   data() {
     return {
       errData: [],
