@@ -125,11 +125,9 @@ export default {
       height: 40px;
       line-height: 40px;
       border-radius: 50%;
-      // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       margin-top: 15px;
       text-align: center;
       cursor: pointer;
-      // transition: all 0.5s;
       font-size: 22px;
       color: #ffffff;
       background: #11a8cd;
@@ -141,20 +139,17 @@ export default {
   .container {
     min-width: 0px;
     max-width: 600px;
-    // overflow: hidden !important;
   }
   .nav-bar {
     max-width: 600px !important;
     overflow: hidden !important;
     min-width: 0px !important;
-    // background-color: red !important;
     .serach-right {
       display: block !important;
       background-color: rgba(255, 255, 255, 0) !important;
       box-shadow: none !important;
       border-radius: none !important;
       border: none !important;
-      // width: 60% !important;
       font-size: 0.3rem;
       height: 100%;
       width: 155px !important;
