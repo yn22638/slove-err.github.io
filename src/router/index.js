@@ -7,13 +7,9 @@ const routes = [
   {
     path: '*',
     component: () => import('../views/error'),
-    // redirect: '/404'
   },
   {
     path: '/',
-    // redirect: {
-    //     name: 'homepage'
-    // },
     component: () => import('../views/blog'),
     children: [
       {

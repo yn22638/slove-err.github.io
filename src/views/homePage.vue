@@ -321,7 +321,7 @@
 <template>
   <div class="columns">
     <div class="columns-left"
-      v-show="!isShowBlog">
+      >
       <div class="card-content"
         v-for="item in errData"
         :key="item.id">
@@ -400,7 +400,6 @@ export default {
   data() {
     return {
       errData: [],
-      isShowBlog: true,
     }
   },
   mounted() {
