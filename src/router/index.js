@@ -5,29 +5,31 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '*',
+    component: () => import('../views/error'),
+  },
+  {
     path: '/',
     component: () => import('../views/blog'),
-    children: [{
-      path: '/',
-      name: 'homepage',
-      component: () => import('../views/homePage')
-    }]
+    children: [
+      {
+        path: '/',
+        name: 'homepage',
+        component: () => import('../views/homePage'),
+      },
+    ],
   },
   {
     path: '/demo',
     name: 'demo',
-    component: () => import('../views/demo.vue')
-  },
-  {
-    path: '*',
-    component: () => import('../views/error')
+    component: () => import('../views/demo.vue'),
   },
 ]
 
 const router = new VueRouter({
   // mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
 })
 
 export default router

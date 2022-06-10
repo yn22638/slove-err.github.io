@@ -149,6 +149,11 @@ const errList = [
           'https://blog.csdn.net/qq_42780155/article/details/103765618?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control',
       },
       {
+        errName: 'vue3 vscode插件',
+        slovePath:
+          'https://blog.csdn.net/weixin_44867717/article/details/121391243',
+      },
+      {
         errName: 'vue线上版本引用网络图片报错403的解决办法',
         slovePath:
           'https://blog.csdn.net/impossible1994727/article/details/106759581?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242',
@@ -755,6 +760,22 @@ const errList = [
       {
         errName: 'vue click.stop阻止点击事件继续传播',
         slovePath: 'https://www.cnblogs.com/dongyuezhuang/p/11527447.html',
+      },
+    ],
+  },
+  {
+    id: 22,
+    mainName: 'await/async/promise',
+    imgUrl: 'https://picsum.photos/369/161',
+    content: [
+      {
+        errName: 'await和then的区别详解',
+        slovePath:
+          'https://blog.csdn.net/qq_44606064/article/details/113796423?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2.queryctrv4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-2.queryctrv4&utm_relevant_index=4',
+      },
+      {
+        errName: '从JS引擎理解Await b()与Promise.then(b)的堆栈处理',
+        slovePath: 'https://blog.csdn.net/Fundebug/article/details/81127760',
       },
     ],
   },
