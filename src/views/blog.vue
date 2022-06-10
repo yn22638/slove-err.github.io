@@ -8,7 +8,9 @@
       </div>
       <div class="serach-right">
         <span class="iconfont icon-sousou"></span>
-        <input type="text" class="serach-value" placeholder="Seach every.." />
+        <input type="text"
+          class="serach-value"
+          placeholder="Seach every.." />
       </div>
     </nav>
     <div class="content">
@@ -16,11 +18,9 @@
     </div>
     <div class="top-or-pageType">
       <transition name="slide-fade">
-        <div
-          class="iconfont icon-fanhuidingbu button_blur"
+        <div class="iconfont icon-fanhuidingbu button_blur"
           @click="bindTop"
-          v-show="isShow"
-        ></div>
+          v-show="isShow"></div>
       </transition>
     </div>
   </div>
@@ -30,15 +30,15 @@
 export default {
   components: {},
   props: {},
-  data () {
+  data() {
     return {
       isShow: false,
-      scrollTopH: 0
+      scrollTopH: 0,
     }
   },
   computed: {},
   methods: {
-    bindTop () {
+    bindTop() {
       // 实现滚动效果
       const timeTop = setInterval(() => {
         // document.body.scrollTop = document.documentElement.scrollTop = this.scrollTopH -= 50
@@ -53,7 +53,7 @@ export default {
       // document.documentElement.scrollTop = 0;
     },
     // 控制返回顶部显示隐藏
-    scrollTop () {
+    scrollTop() {
       this.scrollTopH =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -63,16 +63,16 @@ export default {
       } else {
         this.isShow = false
       }
-    }
+    },
   },
-  mounted () {
+  mounted() {
     // 监听滚动事件
     window.addEventListener('scroll', this.scrollTop)
-  }
+  },
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .container {
   background-color: #fffafa;
   height: 100%;

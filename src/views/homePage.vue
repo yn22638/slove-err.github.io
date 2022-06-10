@@ -1,4 +1,4 @@
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .columns {
   .columns-left {
     float: left;
