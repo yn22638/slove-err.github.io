@@ -24,6 +24,11 @@ const routes = [
     name: 'demo',
     component: () => import('../views/demo.vue'),
   },
+  {
+    path: '/sign-board',
+    name: 'SignBoard',
+    component: () => import('../views/SignBoard.vue'),
+  },
 ]
 
 const router = new VueRouter({
