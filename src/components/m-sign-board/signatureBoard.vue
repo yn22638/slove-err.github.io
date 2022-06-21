@@ -1,12 +1,13 @@
 <template>
-  <div class="d-flex ai-center jc-center"
+  <div class="canvas-board"
     oncontextmenu="return false"
     onselectstart="return false"
     ondragstart="return false">
     <div :id="signatureIdName"
-      class="z-index-1 opacity-9"></div>
-    <p class="pos-absolute signature-area text-32"
-      :class="{'text-rotate':signatureType!='signatureMin'}">签字区域</p>
+      class="opacity-9"
+      style="zIndex:1"></div>
+    <p class="canvas-board__text"
+      :class="{ 'text-rotate': signatureType != 'signatureMin' }">签字区域</p>
   </div>
 </template>
 
@@ -198,35 +199,23 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.signature-area {
-  letter-spacing: 12px;
-  color: #000000;
+.canvas-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    position: absolute;
+    letter-spacing: 12px;
+    color: #000000;
+    font-size: 32px;
+  }
 }
+
 .opacity-9 {
   opacity: 0.9;
 }
+
 .text-rotate {
   transform: rotate(90deg);
-}
-.d-flex {
-  display: flex;
-}
-.jc-between {
-  justify-content: space-between;
-}
-.ai-center {
-  align-items: center;
-}
-.z-index-1 {
-  z-index: 1;
-}
-.opacity-9 {
-  opacity: 0.9;
-}
-.pos-absolute {
-  position: absolute;
-}
-.text-32 {
-  font-size: 32px;
 }
 </style>
