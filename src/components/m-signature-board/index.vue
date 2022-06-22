@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-popup class=""
+    <van-popup class="signature-board__popup"
       v-model="visible"
       :close-on-click-overlay='false'
       :overlay-style="{ zIndex: 1000 }"

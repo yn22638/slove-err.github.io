@@ -27,7 +27,7 @@ const routes = [
   {
     path: '/sign-board',
     name: 'SignBoard',
-    component: () => import('../views/SignBoard.vue'),
+    component: () => import('../views/signature-board/index.vue'),
   },
 ]
 
