@@ -315,6 +315,33 @@
         height: 45px !important;
       }
     }
+    .float-menu {
+      display: flex;
+      height: 36px;
+      color: #fff;
+      width: 98px;
+      position: fixed;
+      align-items: center;
+      top: 150px;
+      border-radius: 405px 0 0 405px;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 0.5s ease;
+      .menu-icon {
+        height: 24px;
+        margin-right: 2px;
+        margin-left: 8px;
+        width: 25px;
+      }
+      .menu-btn {
+        // bg-transparent
+        background: none;
+        border: none;
+        height: 20px;
+        color: #fff;
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+    }
   }
 }
 </style>
@@ -388,6 +415,18 @@
             class="iconfont icon-social-_round-facebook"></a>
         </div>
       </div>
+      <div class="float-menu"
+        :style="{
+      right: isShowCatalogue ? '0' : '-66px',
+    }">
+        <img src="@/assets/catalogue-icon.png"
+          class="menu-icon"
+          @click.stop="isShowCatalogue = !isShowCatalogue" />
+        <button class="menu-btn"
+          @click.stop="onCatalogueClick">
+          知识小🏡
+        </button>
+      </div>
     </div>
     <div>
     </div>
@@ -399,8 +438,22 @@ export default {
   data() {
     return {
       errData: [],
+      isShowCatalogue: false,
+      // windowWidth: document.documentElement.clientWidth, //实时屏幕宽度
     }
   },
+  methods: {
+    onCatalogueClick() {
+      alert('正在开发中！，敬请期待')
+    },
+  },
+  // watch: {
+  //   windowWidth(newval, val) {
+  //     let that = this
+
+  //     console.log('实时屏幕宽度：', newval, val, that.windowWidth)
+  //   },
+  // },
   mounted() {
     console.log(
       '%chello world',
@@ -427,6 +480,13 @@ export default {
 `
     console.log(`%c${ascii}`, 'color:#e59de3')
     this.errData = errData.errList
+    // window.onresize = () => {
+    //   return (() => {
+    //     window.fullWidth = document.documentElement.clientWidth
+    //     this.windowWidth = window.fullWidth // 宽
+    //   })()
+    // }
+    // http://www.icodebang.com/article/264091 vue实时获取页面宽度
   },
 }
 </script>
