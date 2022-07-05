@@ -416,6 +416,7 @@
         </div>
       </div>
       <div class="float-menu"
+        v-if="windowWidth < 600"
         :style="{
       right: isShowCatalogue ? '0' : '-66px',
     }">
@@ -430,6 +431,9 @@
     </div>
     <div>
     </div>
+    <van-action-sheet v-model="isShowActionSheet"
+      :actions="actions"
+      @select="onSelectClick" />
   </div>
 </template>
 <script>
@@ -439,12 +443,22 @@ export default {
     return {
       errData: [],
       isShowCatalogue: false,
-      // windowWidth: document.documentElement.clientWidth, //实时屏幕宽度
+      windowWidth: document.documentElement.clientWidth, //实时屏幕宽度
+      isShowActionSheet: false,
+      actions: [
+        { name: '签字版', routerName: 'SignBoard' },
+        { name: '选项二' },
+        { name: '选项三' },
+      ],
     }
   },
   methods: {
     onCatalogueClick() {
-      alert('正在开发中！，敬请期待')
+      // alert('正在开发中！，敬请期待')
+      this.isShowActionSheet = true
+    },
+    onSelectClick({ routerName = '' }) {
+      routerName && this.$router.push({ name: routerName })
     },
   },
   // watch: {
@@ -480,12 +494,12 @@ export default {
 `
     console.log(`%c${ascii}`, 'color:#e59de3')
     this.errData = errData.errList
-    // window.onresize = () => {
-    //   return (() => {
-    //     window.fullWidth = document.documentElement.clientWidth
-    //     this.windowWidth = window.fullWidth // 宽
-    //   })()
-    // }
+    window.onresize = () => {
+      return (() => {
+        window.fullWidth = document.documentElement.clientWidth
+        this.windowWidth = window.fullWidth // 宽
+      })()
+    }
     // http://www.icodebang.com/article/264091 vue实时获取页面宽度
   },
 }
