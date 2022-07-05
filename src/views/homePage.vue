@@ -500,7 +500,6 @@ export default {
         this.windowWidth = window.fullWidth // 宽
       })()
     }
-    // http://www.icodebang.com/article/264091 vue实时获取页面宽度
   },
 }
 </script>
